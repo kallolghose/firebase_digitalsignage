@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Firebase</title>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-firestore.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/firebasestorage.js"></script>
+</head>
+<body>
+	<div>
+		<p>Adding data to firebase</p>
+		<table>
+			<tr>
+				<td>Firstname : </td>
+				<td><input type="text" id="fName" style="width:100px"/></td>
+			</tr>
+			<tr>
+				<td>Lastname : </td>
+				<td><input type="text" id="lName" style="width:100px"/></td>
+			</tr>
+			<tr>
+				<td>Address : </td>
+				<td><input type="text" id="address" style="width:100px"/></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="button" id="submit" onclick="addDataToDB()" value="Add"/></td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<p>Fetching data from datasource</p>
+		<table id="fetchTable">
+			<thead>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Address</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<img id="myimg" src="" width="200px" height="200px"/>
+	</div>
+</body>
+</html>
